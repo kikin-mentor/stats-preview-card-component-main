@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --very_dark_blue: hsl(233, 47%, 7%);   /*  (main background)  */
+    --dark_desaturated_blue: hsl(244, 38%, 16%);    /*  (card background)  */
+    --soft_violet: hsl(277, 64%, 61%);    /*  (accent)  */
+    --white: hsl(0, 0%, 100%);     /*  (main heading, stats)  */
+    --slightly_transparent_whitema: hsla(0, 0%, 100%, 0.75);   /* (main paragraph)  */
+    --slightly_transparent_whiteme: hsla(0, 0%, 100%, 0.6);   /*  (stat headings)  */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    background-color: var(--very_dark_blue);
+    color: var(--white);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 89px;
+    padding-bottom: 89px;
+}
+
+#container {
+    border-radius: 10px;
+    /* overflow: hidden; */
+    width: 350px;
+    height: 779px;
+    box-sizing: content-box;
+    background-color: var(--dark_desaturated_blue);
+}
+
+#container .cont-1 {
+    background-image: linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)), url(images/image-header-mobile.jpg);
+    width: 350px;
+    height: 243px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#container .con-1-2 .cont-2 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+#container .con-1-2 .cont-2 .dive {
+    text-align: center;
+    padding-top: 45px;
+    word-spacing: 4px;
+    padding-bottom: 30px;
+}
+#container .con-1-2 .cont-2 .parrafo {
+    word-spacing: 4px;
+    font-size: 20px;
+    font: 400;
+}
+#container .con-1-2 .cont-2 h2 {
+    font: 700;
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+}
+#container .con-1-2 .cont-2 .violet {
+    color: var(--soft_violet);
+}
+#container .con-1-2 .cont-2 p{
+    color: var(--slightly_transparent_whitema);
+}
+#container .con-1-2 .cont-3 {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    color: var(--slightly_transparent_whiteme);
+    padding-bottom: 40px;
+    padding-top: 52px;
+    text-align: center;
+    box-sizing: border-box;
+}
+#container .con-1-2 .cont-3 .pardo,
+#container .con-1-2 .cont-3 .pard,
+#container .con-1-2 .cont-3 .pare {
+    color: white;
+    font: 700;
+    font-size: 17px;
+    font-family: 'Inter', sans-serif;
+}
+#container .con-1-2 .cont-3 .parra-1,
+#container .con-1-2 .cont-3 .parra-2,
+#container .con-1-2 .cont-3 .parra-3 {
+    font-size: 15px;
+    font: 400;
+    padding-bottom: 32px;
+}
+#container .con-1-2 .cont-3 .parra-3 {
+    padding-bottom: 40px;
+}
+
+.attribution { 
+    font-size: 9px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    padding-top: 880px;
+}
+.attribution a { color: hsl(118, 68%, 44%); }
+
+
+@media screen and (min-width: 1440px) {
+    #container{
+        width: 1111px;
+        height: 445px;
+        border-radius: 10px;
+    }
+    #container .cont-1 {
+        background-image: linear-gradient(hsla(277, 64%, 61%, 0.5), hsla(277, 64%, 61%, 0.5)), url(images/image-header-desktop.jpg);
+        box-sizing: border-box;
+        margin-left: 570px;
+        width: 540px;
+        height: 443px;
+    }
+    #container .con-1-2 .cont-2 {
+        display: inline-block;
+        width: 378px;
+        height: 174px;
+    }
+    #container .con-1-2 {
+        width: 569px;
+        height: 450px;
+        width: 100%;
+        display: flex;
+        margin-top: -414px;
+        padding-left: 74px;
+    }
+    #container .con-1-2 .cont-2 .dive {
+        font-size: 20px;
+        text-align: left;
+    }
+    #container .con-1-2 .cont-2 .parrafo {
+        text-align: left;
+        line-height: 22px;
+    }
+    #container .con-1-2 .cont-3 {
+        margin-bottom: 66px;
+        display: block;
+        box-sizing: border-box;
+        margin-top: 260px;
+        margin-left: -376px;
+        width: 373px;
+        height: 42px;
+    }
+    #container .con-1-2 .cont-3 .parra-1,
+    #container .con-1-2 .cont-3 .pardo {
+        text-align: left;
+    }
+    #container .con-1-2 .cont-3 .parr-2,
+    #container .con-1-2 .cont-3 .pard {
+        display: block;
+        margin-top: -70px;
+    }
+    #container .con-1-2 .cont-3 .pard {
+        margin-left: -54px;
+    }
+    #container .con-1-2 .cont-3 .pare,
+    #container .con-1-2 .cont-3 .parra-3 {
+        display: block;
+        margin-top: -50px;
+        text-align: right;
+    }
+    #container .con-1-2 .cont-3 .pare {
+        margin-left: 303px;
+        margin-top: -72px;
+        position: absolute;
+    }
+}
